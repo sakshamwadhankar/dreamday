@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Inquire Now | Dream Day Events</title>
+    <meta name="description" content="Plan your premium celebration with Mr. Ayush Kale. Send us details about your event decor, venue, and catering requirements.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </div>
+
+    <!-- Left & Right Scroll-triggered Vertical Golden Lines -->
+    <div class="scroll-line-container left">
+        <div class="scroll-line-active" id="scroll-line-left"></div>
+    </div>
+    <div class="scroll-line-container right">
+        <div class="scroll-line-active" id="scroll-line-right"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-logo">Dream Day</div>
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <a href="index.html" class="navbar-brand">
+            <h1>Dream Day</h1>
+            <span>Events</span>
+        </a>
+
+                <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="videos.html" class="nav-link">Videos</a></li>
+            <li><a href="packages.html" class="nav-link">Packages</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li><a href="manager.html" class="nav-link">Manager</a></li>
+            <li><a href="inquire.html" class="nav-link active">Contact</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Inquire Hero Section -->
+    <header class="portfolio-hero" style="background-image: linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/blue-stage-new.jpg'); background-size: cover; background-position: center; padding: 120px 5% 60px 5%; text-align: center; border-bottom: 1px solid var(--border-color);">
+        <p class="hero-tagline" data-animate data-delay="100ms">✦ Event Consultation ✦</p>
+        <h2 data-animate data-delay="250ms">Plan Your <span class="gold-text">Bespoke Celebration</span></h2>
+        <p data-animate data-delay="400ms" style="color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto; margin-top: 15px;">Fill in the details below to share your vision, guest count, and requirements with our design team.</p>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact" style="padding-top: 50px; min-height: 70vh;">
+        <div class="contact-container">
+            <div class="contact-form-wrapper" data-animate>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="event-type">Event Type</label>
+                            <select id="event-type" class="form-control" required>
+                                <option value="" disabled selected>Select event category</option>
+                                <option value="wedding">Wedding Decoration & Stage</option>
+                                <option value="haldi">Haldi & Mehndi Setup</option>
+                                <option value="reception">Reception Decor</option>
+                                <option value="catering">Gourmet Catering Services</option>
+                                <option value="birthday">Birthday or Theme Party</option>
+                                <option value="corporate">Corporate Event</option>
+                        <option value="photography">Photography & Videography</option>
+                        <option value="entertainment">Entertainment & Live Music</option>
+                        <option value="transport">Guest Transportation & Logistics</option>
+                        <option value="floral">Floral Arrangements (standalone)</option>
+                                <option value="other">Other Celebration</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Event Date</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="venue">Event Venue (if known)</label>
+                            <input type="text" id="venue" class="form-control" placeholder="Enter venue name or city">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guest-count-form">Approximate Guest Count</label>
+                            <input type="number" id="guest-count-form" class="form-control" placeholder="e.g., 150" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" class="form-control">
+                                <option value="" disabled selected>Select budget range</option>
+                                <option value="under-50k">Under ₹50,000</option>
+                                <option value="50k-1l">₹50,000 - ₹1,00,000</option>
+                                <option value="1l-2l">₹1,00,000 - ₹2,00,000</option>
+                                <option value="2l-5l">₹2,00,000 - ₹5,00,000</option>
+                                <option value="above-5l">Above ₹5,00,000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message / Special Requirements</label>
+                        <textarea id="message" class="form-control" placeholder="Describe your vision, decor preferences, theme ideas, or other special requirements..."></textarea>
+                    </div>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <button type="submit" class="btn btn-primary">Send Email</button>
+                        <button type="button" id="whatsapp-submit-btn" class="btn btn-secondary" style="background: #25d366; color: white; border: 1px solid #25d366;">
+                            <i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i>Inquire on WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="contact-info-wrapper" data-animate>
+                <div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <h4>Call or WhatsApp Us</h4>
+                            <p>+91 84593 98321</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>Email Enquiries</h4>
+                            <p>Ayushkale0412@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <h4>Office Address</h4>
+                            <p>Premium Plaza, Suite 402, Senapati Bapat Road, Pune, Maharashtra - 411016</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-placeholder">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.5975618451877!2d73.8299839!3d18.5308225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf70d8a0d0a5%3A0xe441618a38c23e65!2sSenapati%20Bapat%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Dream Day</h2>
+                    <span>Events</span>
+                </div>
+                <p>Creating magical memories with premium aesthetics, gourmet catering, and signature setups led by creative visionary Ayush Kale.</p>
+                <div class="manager-socials">
+                    <a href="https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Our Services</a></li>
+                    <li><a href="gallery.html">Recent Gallery</a></li>
+                    <li><a href="portfolio.html">Bespoke Portfolio</a></li>
+                    <li><a href="videos.html">Event Glimpses</a></li>
+                    <li><a href="packages.html">Pricing Packages</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">Luxury Weddings</a></li>
+                    <li><a href="index.html#services">Haldi Ceremony setups</a></li>
+                    <li><a href="index.html#services">Reception Decor</a></li>
+                    <li><a href="index.html#services">Bespoke Catering</a></li>
+                    <li><a href="index.html#services">Corporate Galas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 84593 98321</p>
+                <p><i class="fa-solid fa-envelope"></i> Ayushkale0412@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</p>
+                <p><i class="fa-solid fa-clock"></i> Mon - Sun: 09:00 AM - 09:00 PM</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dream Day Events. All Rights Reserved. Managed by Mr. Ayush Kale.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a 
+        href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20your%20luxury%20decorations%20and%20catering." 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="whatsapp-cta" 
+        aria-label="Chat on WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+<div class="back-to-top" id="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Toast Success Notification -->
+    <div class="toast-msg" id="toast-msg" style="display: none; opacity: 0;">
+        <h4>✦ Enquiry Submitted Successfully! ✦</h4>
+        <p>Mr. Ayush Kale or a team member will reach out to you shortly.</p>
+    </div>
+
+    <!-- Custom Cursor elements -->
+        <!-- Exit Intent Modal -->
+    <div class="exit-modal" id="exit-modal">
+        <div class="exit-modal-content">
+            <span class="exit-modal-close" id="exit-modal-close">&times;</span>
+            <h3>✦ Free Consultation ✦</h3>
+            <p>Plan your dream day with Pune's finest! Enter your details to get a free design & budget consultation.</p>
+            <form class="exit-modal-form" id="exit-modal-form">
+                <div class="form-group">
+                    <label for="exit-name">Your Name</label>
+                    <input type="text" id="exit-name" class="form-control" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="exit-phone">Phone Number</label>
+                    <input type="tel" id="exit-phone" class="form-control" required placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary">Claim Free Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="custom-cursor-dot" id="cursor-dot" style="opacity: 0;"></div>
+    <div class="custom-cursor-outline" id="cursor-outline" style="opacity: 0;"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

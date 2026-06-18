@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Our Bespoke Services | Dream Day Events</title>
+    <meta name="description" content="Dream Day Events offers luxury event decoration, premium catering, and complete event management services. Specializing in weddings, haldi ceremonies, receptions, birthdays, and corporate events. Led by visionary Ayush Kale.">
+    <meta name="keywords" content="event decoration, wedding decor, catering services, haldi ceremony, reception decor, birthday party, corporate events, luxury events, Dream Day Events, Ayush Kale">
+    <meta name="author" content="Dream Day Events">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Dream Day Events | Premium Event Decor & Catering">
+    <meta property="og:description" content="Luxury event decoration, premium catering & complete event management. Transforming your dreams into unforgettable celebrations.">
+    <meta property="og:image" content="images/wedding-stage-green.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Dream Day Events">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </div>
+
+    <!-- Left & Right Scroll-triggered Vertical Golden Lines -->
+    <div class="scroll-line-container left">
+        <div class="scroll-line-active" id="scroll-line-left"></div>
+    </div>
+    <div class="scroll-line-container right">
+        <div class="scroll-line-active" id="scroll-line-right"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-logo">Dream Day</div>
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Background Winding Thread -->
+    <div class="golden-thread-svg-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; z-index: 0;">
+        <svg width="100%" height="100%" style="display: block; min-height: 5000px;">
+            <path d="M 0 500 Q 300 200 600 500 T 1200 500 T 1800 500" fill="none" stroke="rgba(212, 175, 55, 0.07)" stroke-width="1.5" stroke-dasharray="5 5"></path>
+            <path d="M 0 1500 Q 400 1200 800 1500 T 1600 1500" fill="none" stroke="rgba(212, 175, 55, 0.07)" stroke-width="1.5" stroke-dasharray="5 5"></path>
+            <path d="M 0 3000 Q 500 2600 1000 3000 T 2000 3000" fill="none" stroke="rgba(212, 175, 55, 0.07)" stroke-width="1.5" stroke-dasharray="5 5"></path>
+            <path d="M 0 4200 Q 300 3900 700 4200 T 1500 4200" fill="none" stroke="rgba(212, 175, 55, 0.07)" stroke-width="1.5" stroke-dasharray="5 5"></path>
+        </svg>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="navbar-brand">
+            <h1>Dream Day</h1>
+            <span>Events</span>
+        </a>
+
+                <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="videos.html" class="nav-link">Videos</a></li>
+            <li><a href="packages.html" class="nav-link">Packages</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li><a href="manager.html" class="nav-link">Manager</a></li>
+            <li><a href="inquire.html" class="nav-link">Contact</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!-- Services Page Hero Banner -->
+    <header class="portfolio-hero" style="background-image: linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/wedding-stage-green.jpg'); background-size: cover; background-position: center; padding: 120px 5% 60px 5%; text-align: center; border-bottom: 1px solid var(--border-color);">
+        <p class="hero-tagline" data-animate data-delay="100ms">✦ What We Offer ✦</p>
+        <h2 data-animate data-delay="250ms">Our <span class="gold-text">Bespoke Services</span></h2>
+        <p data-animate data-delay="400ms" style="color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto; margin-top: 15px;">Explore Pune's most premium luxury event decor, planning, and multi-cuisine catering solutions.</p>
+    </header>
+
+    <section class="services" id="services" style="padding-top: 80px;">
+        <div class="services-grid">
+            <!-- Service 1: Wedding Decor -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('wedding-decor')">
+                <div class="service-img-wrapper">
+                    <img src="images/wedding-stage-green.jpg" alt="Wedding Decor" class="service-card-img">
+                    <span class="service-badge">Most Popular</span>
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-ring"></i></div>
+                    <h3>Wedding Decor</h3>
+                    <span class="service-card-meta">250+ Weddings Decorated</span>
+                    <p>Grand stage designs, beautiful mandaps, entrance archways and floral styling that leave a lasting impression.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('wedding-decor');">Learn More</button>
+                        <a href="inquire.html?service=Wedding%20Decor" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Haldi & Mehndi Setup -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('haldi-mehndi')">
+                <div class="service-img-wrapper">
+                    <img src="images/haldi-yellow.jpg" alt="Haldi & Mehndi Setup" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Haldi & Mehndi Setup</h3>
+                    <span class="service-card-meta">180+ Ceremonies Styled</span>
+                    <p>Vibrant, colourful, and custom setups using fresh flowers and unique props matching your traditional themes.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('haldi-mehndi');">Learn More</button>
+                        <a href="inquire.html?service=Haldi%20and%20Mehndi" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Reception Decor -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('reception-decor')">
+                <div class="service-img-wrapper">
+                    <img src="images/wedding-red.jpg" alt="Reception Decor" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                    <h3>Reception Decor</h3>
+                    <span class="service-card-meta">120+ Grand Receptions</span>
+                    <p>Ultra-modern layouts, ambient lighting setups, elegant drapes, and high-fashion lounges for post-wedding events.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('reception-decor');">Learn More</button>
+                        <a href="inquire.html?service=Reception%20Decor" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Gourmet Catering -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('gourmet-catering')">
+                <div class="service-img-wrapper">
+                    <img src="images/event-10.jpg" alt="Gourmet Catering" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-hotdog"></i></div>
+                    <h3>Gourmet Catering</h3>
+                    <span class="service-card-meta">300+ Feasts Served</span>
+                    <p>Exquisite culinary experience with premium serving displays, tailored menus, and professional hospitality staff.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('gourmet-catering');">Learn More</button>
+                        <a href="inquire.html?service=Gourmet%20Catering" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5: Themed Parties & Birthdays -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('themed-parties')">
+                <div class="service-img-wrapper">
+                    <img src="images/event-12.jpg" alt="Themed Parties & Birthdays" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                    <h3>Themed Parties & Birthdays</h3>
+                    <span class="service-card-meta">150+ Celebrations</span>
+                    <p>Creative themed designs, balloons, and customized decor for kids' birthdays and private social gatherings.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('themed-parties');">Learn More</button>
+                        <a href="inquire.html?service=Themed%20Parties" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6: Corporate Galas -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('corporate-galas')">
+                <div class="service-img-wrapper">
+                    <img src="images/event-14.jpg" alt="Corporate Galas" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Corporate Galas</h3>
+                    <span class="service-card-meta">90+ Corporate Events</span>
+                    <p>Professional stage branding, audio-visual coordinate setups, premium conference decor, and awards night arrangements.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('corporate-galas');">Learn More</button>
+                        <a href="inquire.html?service=Corporate%20Event" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 7: Photography & Videography -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('photography-videography')">
+                <div class="service-img-wrapper">
+                    <img src="images/event-17.jpg" alt="Photography & Videography" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Photography & Videography</h3>
+                    <span class="service-card-meta">200+ Shoots Covered</span>
+                    <p>Cinematic highlight reels, professional event photography, and drone packages capturing every single emotion.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('photography-videography');">Learn More</button>
+                        <a href="inquire.html?service=Photography" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 8: Entertainment & Live Music -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('entertainment-music')">
+                <div class="service-img-wrapper">
+                    <img src="images/event-18.jpg" alt="Entertainment & Live Music" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-music"></i></div>
+                    <h3>Entertainment & Live Music</h3>
+                    <span class="service-card-meta">100+ Live Stages</span>
+                    <p>Live wedding bands, classical musicians, professional DJs, sound setups, and elite artist management.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('entertainment-music');">Learn More</button>
+                        <a href="inquire.html?service=Entertainment" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 9: Guest Transportation & Logistics -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('transport-logistics')">
+                <div class="service-img-wrapper">
+                    <img src="images/event-22.jpg" alt="Guest Transportation & Logistics" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-car"></i></div>
+                    <h3>Guest Transportation & Logistics</h3>
+                    <span class="service-card-meta">70+ Event Fleets</span>
+                    <p>Premium guest arrivals, vehicle arrangements, route coordination, and hospitality helpdesk management.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('transport-logistics');">Learn More</button>
+                        <a href="inquire.html?service=Transport" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 10: Floral Arrangements (standalone) -->
+            <div class="service-card" data-animate onclick="openServiceDetailModal('floral-arrangements')">
+                <div class="service-img-wrapper">
+                    <img src="images/event-9.jpg" alt="Floral Arrangements" class="service-card-img">
+                </div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Floral Arrangements</h3>
+                    <span class="service-card-meta">500+ Floral Styles</span>
+                    <p>Exotic floral setups, table centerpieces, fresh flower decorations, and customized boutique arrangements.</p>
+                    <div class="service-card-actions">
+                        <button class="btn btn-card-more" onclick="event.stopPropagation(); openServiceDetailModal('floral-arrangements');">Learn More</button>
+                        <a href="inquire.html?service=Floral" class="btn btn-card-inquire" onclick="event.stopPropagation();">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;" data-animate>
+            <a href="packages.html" class="btn btn-secondary">View Event Packages</a>
+        </div>
+    </section>
+
+    <!-- Service Detail Popup Modal -->
+    <div id="service-modal" class="custom-modal">
+        <div class="modal-backdrop" onclick="closeServiceModal()"></div>
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" onclick="closeServiceModal()">&times;</button>
+            <div class="modal-body-layout">
+                <div class="modal-gallery">
+                    <div class="modal-carousel-container">
+                        <div class="modal-carousel-slides" id="modal-carousel-slides">
+                            <!-- JS will inject slides -->
+                        </div>
+                        <button class="carousel-control prev" onclick="event.stopPropagation(); moveModalCarousel(-1)">&lt;</button>
+                        <button class="carousel-control next" onclick="event.stopPropagation(); moveModalCarousel(1)">&gt;</button>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <span class="modal-service-badge" id="modal-service-badge">Category</span>
+                    <h2 id="modal-service-title" class="gold-text">Service Title</h2>
+                    <p class="modal-price-range" id="modal-service-price">Pricing Range: --</p>
+                    <div class="modal-desc" id="modal-service-desc">Description goes here</div>
+                    
+                    <div class="modal-faqs-wrapper">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="modal-faqs" id="modal-service-faqs">
+                            <!-- JS will load FAQs -->
+                        </div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="#" id="modal-inquire-btn" class="btn btn-primary">Inquire About This Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Dream Day</h2>
+                    <span>Events</span>
+                </div>
+                <p>Creating magical memories with premium aesthetics, gourmet catering, and signature setups led by creative visionary Ayush Kale.</p>
+                <div class="manager-socials">
+                    <a href="https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="gallery.html">Recent Gallery</a></li>
+                    <li><a href="portfolio.html">Bespoke Portfolio</a></li>
+                    <li><a href="videos.html">Event Glimpses</a></li>
+                    <li><a href="packages.html">Pricing Packages</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#services">Luxury Weddings</a></li>
+                    <li><a href="#services">Haldi Ceremony setups</a></li>
+                    <li><a href="#services">Reception Decor</a></li>
+                    <li><a href="#services">Bespoke Catering</a></li>
+                    <li><a href="#services">Corporate Galas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 84593 98321</p>
+                <p><i class="fa-solid fa-envelope"></i> Ayushkale0412@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</p>
+                <p><i class="fa-solid fa-clock"></i> Mon - Sun: 09:00 AM - 09:00 PM</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dream Day Events. All Rights Reserved. Managed by Mr. Ayush Kale.</p>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp CTA -->
+    <a 
+        href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20your%20luxury%20decorations%20and%20catering." 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="whatsapp-cta" 
+        aria-label="Chat on WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+<!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Exit Intent Modal -->
+    <div class="exit-modal" id="exit-modal">
+        <div class="exit-modal-content">
+            <span class="exit-modal-close" id="exit-modal-close">&times;</span>
+            <h3>✦ Free Consultation ✦</h3>
+            <p>Plan your dream day with Pune's finest! Enter your details to get a free design & budget consultation.</p>
+            <form class="exit-modal-form" id="exit-modal-form">
+                <div class="form-group">
+                    <label for="exit-name">Your Name</label>
+                    <input type="text" id="exit-name" class="form-control" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="exit-phone">Phone Number</label>
+                    <input type="tel" id="exit-phone" class="form-control" required placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary">Claim Free Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Success Notification -->
+    <div class="toast-msg" id="toast-msg" style="display: none; opacity: 0;">
+        <h4>✦ Enquiry Submitted Successfully! ✦</h4>
+        <p>Mr. Ayush Kale or a team member will reach out to you shortly.</p>
+    </div>
+
+    <!-- Custom Cursor elements -->
+    <div class="custom-cursor-dot" id="cursor-dot" style="opacity: 0;"></div>
+    <div class="custom-cursor-outline" id="cursor-outline" style="opacity: 0;"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Visual Creations Gallery | Dream Day Events</title>
+    <meta name="description" content="Read expert tips and trends on luxury wedding stage decor, traditional sangeet arrangements, and gourmet catering in Pune city.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </div>
+
+    <!-- Left & Right Scroll-triggered Vertical Golden Lines -->
+    <div class="scroll-line-container left">
+        <div class="scroll-line-active" id="scroll-line-left"></div>
+    </div>
+    <div class="scroll-line-container right">
+        <div class="scroll-line-active" id="scroll-line-right"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-logo">Dream Day</div>
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <a href="index.html" class="navbar-brand">
+            <h1>Dream Day</h1>
+            <span>Events</span>
+        </a>
+
+                <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="videos.html" class="nav-link">Videos</a></li>
+            <li><a href="packages.html" class="nav-link">Packages</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li><a href="manager.html" class="nav-link">Manager</a></li>
+            <li><a href="inquire.html" class="nav-link">Contact</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <header class="portfolio-hero" style="background-image: linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/blue-stage-new.jpg'); background-size: cover; background-position: center; padding: 120px 5% 60px 5%; text-align: center; border-bottom: 1px solid var(--border-color);">
+        <p class="hero-tagline">✦ Royal Visual Delights ✦</p>
+        <h2>Our <span class="gold-text">Creations Gallery</span></h2>
+        <p style="color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto; margin-top: 15px;">Explore our stunning royal wedding stages, vibrant traditional haldi setups, and elite corporate decors designed by Mr. Ayush Kale.</p>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery" style="padding-top: 60px;">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="wedding">Wedding</button>
+            <button class="filter-btn" data-filter="haldi">Haldi</button>
+            <button class="filter-btn" data-filter="corporate">Corporate</button>
+        </div>
+        
+        <!-- Hardcoded Static Gallery Grid of all 23 event images -->
+        <div class="gallery-grid" id="dynamic-gallery-grid">
+            <div class="gallery-item" data-category="haldi" data-animate>
+                <img src="images/event-1.jpg?v=9" alt="Emerald Dreamcatcher Haldi">
+                <div class="gallery-overlay">
+                    <h4>Emerald Dreamcatcher Haldi</h4>
+                    <p>HALDI</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-2.jpg?v=9" alt="Royal Monogram Stage">
+                <div class="gallery-overlay">
+                    <h4>Royal Monogram Stage</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-3.jpg?v=9" alt="Royal White Arch Stage">
+                <div class="gallery-overlay">
+                    <h4>Royal White Arch Stage</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-4.jpg?v=9" alt="Elysian Banquet Tablescape">
+                <div class="gallery-overlay">
+                    <h4>Elysian Banquet Tablescape</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="haldi" data-animate>
+                <img src="images/event-5.jpg?v=9" alt="Vibrant Haldi Styling">
+                <div class="gallery-overlay">
+                    <h4>Vibrant Haldi Styling</h4>
+                    <p>HALDI</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="haldi" data-animate>
+                <img src="images/event-6.jpg?v=9" alt="Traditional Yellow Haldi Backdrop">
+                <div class="gallery-overlay">
+                    <h4>Traditional Yellow Haldi Backdrop</h4>
+                    <p>HALDI</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="haldi" data-animate>
+                <img src="images/event-7.jpg?v=9" alt="Traditional Saffron Haldi">
+                <div class="gallery-overlay">
+                    <h4>Traditional Saffron Haldi</h4>
+                    <p>HALDI</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="haldi" data-animate>
+                <img src="images/event-8.jpg?v=9" alt="Outdoor Haldi Swing">
+                <div class="gallery-overlay">
+                    <h4>Outdoor Haldi Swing</h4>
+                    <p>HALDI</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-9.jpg?v=9" alt="Saffron Mandap Layout">
+                <div class="gallery-overlay">
+                    <h4>Saffron Mandap Layout</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="corporate" data-animate>
+                <img src="images/event-10.jpg?v=9" alt="Gala Banquet Table Setup">
+                <div class="gallery-overlay">
+                    <h4>Gala Banquet Table Setup</h4>
+                    <p>CORPORATE</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="corporate" data-animate>
+                <img src="images/event-11.jpg?v=9" alt="Elite Corporate Stage Setup">
+                <div class="gallery-overlay">
+                    <h4>Elite Corporate Stage Setup</h4>
+                    <p>CORPORATE</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="corporate" data-animate>
+                <img src="images/event-12.jpg?v=9" alt="Annual Business Award Night">
+                <div class="gallery-overlay">
+                    <h4>Annual Business Award Night</h4>
+                    <p>CORPORATE</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-13.jpg?v=9" alt="Royal Pink Backdrop Stage">
+                <div class="gallery-overlay">
+                    <h4>Royal Pink Backdrop Stage</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="corporate" data-animate>
+                <img src="images/event-14.jpg?v=9" alt="Product Launch Backdrop">
+                <div class="gallery-overlay">
+                    <h4>Product Launch Backdrop</h4>
+                    <p>CORPORATE</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-15.jpg?v=9" alt="Grand Floral Arch Stage">
+                <div class="gallery-overlay">
+                    <h4>Grand Floral Arch Stage</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="corporate" data-animate>
+                <img src="images/event-16.jpg?v=9" alt="Shareholders Meeting Stage">
+                <div class="gallery-overlay">
+                    <h4>Shareholders Meeting Stage</h4>
+                    <p>CORPORATE</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="corporate" data-animate>
+                <img src="images/event-17.jpg?v=9" alt="Corporate Branding Pavilion">
+                <div class="gallery-overlay">
+                    <h4>Corporate Branding Pavilion</h4>
+                    <p>CORPORATE</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="corporate" data-animate>
+                <img src="images/event-18.jpg?v=9" alt="Executive VIP Lounge Area">
+                <div class="gallery-overlay">
+                    <h4>Executive VIP Lounge Area</h4>
+                    <p>CORPORATE</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="corporate" data-animate>
+                <img src="images/event-19.jpg?v=9" alt="Blue Theme Gala Banquet">
+                <div class="gallery-overlay">
+                    <h4>Blue Theme Gala Banquet</h4>
+                    <p>CORPORATE</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-20.jpg?v=9" alt="Bespoke Monogram Wedding Stage">
+                <div class="gallery-overlay">
+                    <h4>Bespoke Monogram Wedding Stage</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-21.jpg?v=9" alt="Elysian Crystal Stage">
+                <div class="gallery-overlay">
+                    <h4>Elysian Crystal Stage</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="haldi" data-animate>
+                <img src="images/event-22.jpg?v=9" alt="Symphony of Marigolds">
+                <div class="gallery-overlay">
+                    <h4>Symphony of Marigolds</h4>
+                    <p>HALDI</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding" data-animate>
+                <img src="images/event-23.jpg?v=9" alt="Royal Blue & White Stage">
+                <div class="gallery-overlay">
+                    <h4>Royal Blue & White Stage</h4>
+                    <p>WEDDING</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Highlights Sub-Section -->
+        <div class="video-highlights" style="margin-top: 100px;" data-animate>
+            <div class="section-header" style="margin-bottom: 50px;">
+                <p class="hero-tagline" data-animate data-delay="100ms">✦ Experience the Magic ✦</p>
+                <h2 data-animate data-delay="250ms">Cinematic <span class="gold-text">Highlights</span></h2>
+            </div>
+            <div class="luxury-video-trio">
+                <!-- Video 1 -->
+                <div class="video-trio-card" id="trio-player-1">
+                    <span class="video-trio-badge">Wedding Teaser</span>
+                    <video autoplay muted playsinline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url('images/event-3.jpg?v=9');">
+                        <source src="images/video-1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-trio-overlay">
+                        <h3>Wedding Entrance Highlights</h3>
+                        <p>A cinematic look at a luxury wedding entry setup with gold pillars and floral arches.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-trio-card" id="trio-player-2">
+                    <span class="video-trio-badge">Stage Walkthrough</span>
+                    <video autoplay muted playsinline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url('images/event-2.jpg?v=9');">
+                        <source src="images/video-2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-trio-overlay">
+                        <h3>Grand Reception Decor Reel</h3>
+                        <p>Walkthrough showing the detailed lighting, chandeliers, and setup of a royal stage.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-trio-card" id="trio-player-3">
+                    <span class="video-trio-badge">Haldi Highlight</span>
+                    <video autoplay muted playsinline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url('images/event-5.jpg?v=9');">
+                        <source src="images/video-3.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-trio-overlay">
+                        <h3>Vibrant Haldi Ceremony Clip</h3>
+                        <p>A fun compilation clip of our signature traditional marigold haldi setups and props.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Direct Instagram Reels Link Button -->
+            <div style="text-align: center; margin-top: 50px;" data-animate>
+                <a href="https://www.instagram.com/royal_eventanddecor/reels/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fa-brands fa-instagram" style="margin-right: 8px; color: var(--gold-primary);"></i>Check the Reel on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="cta-banner" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); text-align: center; padding: 60px 5%;">
+        <h3 style="font-size: 2.2rem; margin-bottom: 15px;">Have an event in mind? <span class="gold-text">Let's Craft It.</span></h3>
+        <p style="color: var(--text-secondary); margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Book your free 1-on-1 design layout consultation in Pune with Mr. Ayush Kale.</p>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="inquire.html" class="btn btn-primary">Book Consultation</a>
+            <a href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20booking%20an%20event." target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i>WhatsApp Chat
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Dream Day</h2>
+                    <span>Events</span>
+                </div>
+                <p>Creating magical memories with premium aesthetics, gourmet catering, and signature setups led by creative visionary Ayush Kale.</p>
+                <div class="manager-socials">
+                    <a href="https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Our Services</a></li>
+                    <li><a href="gallery.html">Recent Gallery</a></li>
+                    <li><a href="portfolio.html">Bespoke Portfolio</a></li>
+                    <li><a href="videos.html">Event Glimpses</a></li>
+                    <li><a href="packages.html">Pricing Packages</a></li>
+                    <li><a href="blog.html">Bespoke Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">Luxury Weddings</a></li>
+                    <li><a href="index.html#services">Haldi Ceremony setups</a></li>
+                    <li><a href="index.html#services">Reception Decor</a></li>
+                    <li><a href="index.html#services">Bespoke Catering</a></li>
+                    <li><a href="index.html#services">Corporate Galas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 84593 98321</p>
+                <p><i class="fa-solid fa-envelope"></i> Ayushkale0412@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dream Day Events. All Rights Reserved. Managed by Mr. Ayush Kale.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a 
+        href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20your%20luxury%20decorations%20and%20catering." 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="whatsapp-cta" 
+        aria-label="Chat on WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+<!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Custom Cursor elements -->
+        <!-- Exit Intent Modal -->
+    <div class="exit-modal" id="exit-modal">
+        <div class="exit-modal-content">
+            <span class="exit-modal-close" id="exit-modal-close">&times;</span>
+            <h3>✦ Free Consultation ✦</h3>
+            <p>Plan your dream day with Pune's finest! Enter your details to get a free design & budget consultation.</p>
+            <form class="exit-modal-form" id="exit-modal-form">
+                <div class="form-group">
+                    <label for="exit-name">Your Name</label>
+                    <input type="text" id="exit-name" class="form-control" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="exit-phone">Phone Number</label>
+                    <input type="tel" id="exit-phone" class="form-control" required placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary">Claim Free Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="custom-cursor-dot" id="cursor-dot" style="opacity: 0;"></div>
+    <div class="custom-cursor-outline" id="cursor-outline" style="opacity: 0;"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

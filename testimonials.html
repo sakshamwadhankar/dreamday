@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Client Testimonials | Dream Day Events</title>
+    <meta name="description" content="Dream Day Events offers luxury event decoration, premium catering, and complete event management services. Specializing in weddings, haldi ceremonies, receptions, birthdays, and corporate events. Led by visionary Ayush Kale.">
+    <meta name="keywords" content="event decoration, wedding decor, catering services, haldi ceremony, reception decor, birthday party, corporate events, luxury events, Dream Day Events, Ayush Kale">
+    <meta name="author" content="Dream Day Events">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Dream Day Events | Premium Event Decor & Catering">
+    <meta property="og:description" content="Luxury event decoration, premium catering & complete event management. Transforming your dreams into unforgettable celebrations.">
+    <meta property="og:image" content="images/wedding-stage-green.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Dream Day Events">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </div>
+
+    <!-- Left & Right Scroll-triggered Vertical Golden Lines -->
+    <div class="scroll-line-container left">
+        <div class="scroll-line-active" id="scroll-line-left"></div>
+    </div>
+    <div class="scroll-line-container right">
+        <div class="scroll-line-active" id="scroll-line-right"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-logo">Dream Day</div>
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Background Winding Thread -->
+    <div class="golden-thread-svg-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; z-index: 0;">
+        <svg width="100%" height="100%" style="display: block; min-height: 5000px;">
+            <path d="M 0 500 Q 300 200 600 500 T 1200 500 T 1800 500" fill="none" stroke="rgba(212, 175, 55, 0.07)" stroke-width="1.5" stroke-dasharray="5 5"></path>
+            <path d="M 0 1500 Q 400 1200 800 1500 T 1600 1500" fill="none" stroke="rgba(212, 175, 55, 0.07)" stroke-width="1.5" stroke-dasharray="5 5"></path>
+            <path d="M 0 3000 Q 500 2600 1000 3000 T 2000 3000" fill="none" stroke="rgba(212, 175, 55, 0.07)" stroke-width="1.5" stroke-dasharray="5 5"></path>
+            <path d="M 0 4200 Q 300 3900 700 4200 T 1500 4200" fill="none" stroke="rgba(212, 175, 55, 0.07)" stroke-width="1.5" stroke-dasharray="5 5"></path>
+        </svg>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="navbar-brand">
+            <h1>Dream Day</h1>
+            <span>Events</span>
+        </a>
+
+                <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="videos.html" class="nav-link">Videos</a></li>
+            <li><a href="packages.html" class="nav-link">Packages</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="testimonials.html" class="nav-link active">Testimonials</a></li>
+            <li><a href="manager.html" class="nav-link">Manager</a></li>
+            <li><a href="inquire.html" class="nav-link">Contact</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!-- Testimonials Page Hero Banner -->
+    <header class="portfolio-hero" style="background-image: linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/event-3.jpg'); background-size: cover; background-position: center; padding: 120px 5% 60px 5%; text-align: center; border-bottom: 1px solid var(--border-color);">
+        <p class="hero-tagline" data-animate data-delay="100ms">✦ Kind Words ✦</p>
+        <h2 data-animate data-delay="250ms">Client <span class="gold-text">Reviews</span></h2>
+        <p data-animate data-delay="400ms" style="color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto; margin-top: 15px;">Read how we've brought smiles and royal decors to couples and clients in Pune.</p>
+    </header>
+    <section class="reviews-section" id="reviews">
+        <div class="section-header">
+            <p class="hero-tagline" data-animate data-delay="100ms">✦ Google Reviews ✦</p>
+            <h2 data-animate data-delay="250ms">Trusted By <span class="gold-text">Hundreds</span></h2>
+        </div>
+        <div class="google-reviews-widget" data-animate>
+            <div class="reviews-header">
+                <div class="reviews-summary">
+                    <i class="fa-brands fa-google reviews-badge-icon"></i>
+                    <div>
+                        <div class="reviews-rating-value">4.9 / 5.0</div>
+                        <div class="reviews-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="reviews-count">Based on 158 verified Google Reviews</div>
+                    </div>
+                </div>
+                <a href="https://g.page/r/google-review-link/review" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.75rem; padding: 10px 22px;">
+                    Write a Review
+                </a>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-item-card">
+                    <div class="review-user-info">
+                        <div class="review-user-avatar">Amit</div>
+                        <div class="review-user-details">
+                            <h4>Amit Deshpande</h4>
+                            <span>Google Reviewer • Pune</span>
+                        </div>
+                    </div>
+                    <div class="reviews-stars" style="margin-bottom: 10px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Excellent coordination! Mr. Ayush Kale managed the entire sangeet sadas and catering display flawlessly. The guest comments on the food were incredible!"</p>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-item-card">
+                    <div class="review-user-info">
+                        <div class="review-user-avatar">Neha</div>
+                        <div class="review-user-details">
+                            <h4>Neha Kulkarni</h4>
+                            <span>Local Guide • Pune</span>
+                        </div>
+                    </div>
+                    <div class="reviews-stars" style="margin-bottom: 10px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"They transformed a simple banquet hall into a royal wedding palace. The gold frame elements and fresh flowers were outstanding. Highly recommended luxury planner in Pune!"</p>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-item-card">
+                    <div class="review-user-info">
+                        <div class="review-user-avatar">Raj</div>
+                        <div class="review-user-details">
+                            <h4>Rajesh Sen</h4>
+                            <span>Google Reviewer • Maharashtra</span>
+                        </div>
+                    </div>
+                    <div class="reviews-stars" style="margin-bottom: 10px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Top tier professionalism. Easy booking, premium catering setup, and gorgeous lighting design. The team was prompt and executed exactly what we signed on."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <p class="hero-tagline" data-animate data-delay="100ms">✦ Kind Words ✦</p>
+            <h2 data-animate data-delay="250ms">Client <span class="gold-text">Experiences</span></h2>
+        </div>
+        
+        <!-- Dynamic Testimonials Slider loaded by JS -->
+        <div class="testimonials-slider"></div>
+        <div class="slider-dots" id="slider-dots"></div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Dream Day</h2>
+                    <span>Events</span>
+                </div>
+                <p>Creating magical memories with premium aesthetics, gourmet catering, and signature setups led by creative visionary Ayush Kale.</p>
+                <div class="manager-socials">
+                    <a href="https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="gallery.html">Recent Gallery</a></li>
+                    <li><a href="portfolio.html">Bespoke Portfolio</a></li>
+                    <li><a href="videos.html">Event Glimpses</a></li>
+                    <li><a href="packages.html">Pricing Packages</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#services">Luxury Weddings</a></li>
+                    <li><a href="#services">Haldi Ceremony setups</a></li>
+                    <li><a href="#services">Reception Decor</a></li>
+                    <li><a href="#services">Bespoke Catering</a></li>
+                    <li><a href="#services">Corporate Galas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 84593 98321</p>
+                <p><i class="fa-solid fa-envelope"></i> Ayushkale0412@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</p>
+                <p><i class="fa-solid fa-clock"></i> Mon - Sun: 09:00 AM - 09:00 PM</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dream Day Events. All Rights Reserved. Managed by Mr. Ayush Kale.</p>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp CTA -->
+    <a 
+        href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20your%20luxury%20decorations%20and%20catering." 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="whatsapp-cta" 
+        aria-label="Chat on WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+<!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Exit Intent Modal -->
+    <div class="exit-modal" id="exit-modal">
+        <div class="exit-modal-content">
+            <span class="exit-modal-close" id="exit-modal-close">&times;</span>
+            <h3>✦ Free Consultation ✦</h3>
+            <p>Plan your dream day with Pune's finest! Enter your details to get a free design & budget consultation.</p>
+            <form class="exit-modal-form" id="exit-modal-form">
+                <div class="form-group">
+                    <label for="exit-name">Your Name</label>
+                    <input type="text" id="exit-name" class="form-control" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="exit-phone">Phone Number</label>
+                    <input type="tel" id="exit-phone" class="form-control" required placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary">Claim Free Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Success Notification -->
+    <div class="toast-msg" id="toast-msg" style="display: none; opacity: 0;">
+        <h4>✦ Enquiry Submitted Successfully! ✦</h4>
+        <p>Mr. Ayush Kale or a team member will reach out to you shortly.</p>
+    </div>
+
+    <!-- Custom Cursor elements -->
+    <div class="custom-cursor-dot" id="cursor-dot" style="opacity: 0;"></div>
+    <div class="custom-cursor-outline" id="cursor-outline" style="opacity: 0;"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
