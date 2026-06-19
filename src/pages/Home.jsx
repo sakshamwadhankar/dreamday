@@ -1,19 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '../utils/useScrollAnimation';
+import { useData } from '../context/DataContext';
 
 const Home = () => {
   useScrollAnimation();
-  const testimonials = JSON.parse(localStorage.getItem('dreamday_testimonials') || '[]');
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-
-  useEffect(() => {
-    if (testimonials.length <= 1) return;
-    const interval = setInterval(() => {
-      setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
 
   // Handle stats animation
   useEffect(() => {
@@ -436,33 +428,7 @@ const Home = () => {
           </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials" id="testimonials">
-          <div className="section-header">
-              <p className="hero-tagline" data-animate data-delay="100ms">✦ Kind Words ✦</p>
-              <h2 data-animate data-delay="250ms">Client <span className="gold-text">Experiences</span></h2>
-          </div>
-          <div className="testimonials-slider" id="react-testimonials-slider">
-              {testimonials.map((t, idx) => (
-                  <div key={idx} className={`testimonial-slide ${idx === activeTestimonial ? 'active' : ''}`} style={{ display: idx === activeTestimonial ? 'block' : 'none' }}>
-                      <div className="testimonial-quote">"{t.quote}"</div>
-                      <div className="testimonial-rating">
-                          {[...Array(t.stars)].map((_, i) => <i key={i} className="fa-solid fa-star"></i>)}
-                      </div>
-                      <div className="testimonial-client-wrapper">
-                          {t.image && <img src={t.image} alt={t.name} className="testimonial-avatar" />}
-                          <div className="testimonial-client">{t.name}</div>
-                          <div className="testimonial-event">{t.event}</div>
-                      </div>
-                  </div>
-              ))}
-          </div>
-          <div className="slider-dots" id="slider-dots">
-              {testimonials.map((_, idx) => (
-                  <span key={idx} className={`dot ${idx === activeTestimonial ? 'active' : ''}`} onClick={() => setActiveTestimonial(idx)}></span>
-              ))}
-          </div>
-      </section>
+      {/* Testimonials removed as per user request */}
 
       {/* Contact Section */}
       <section className="contact" id="contact">

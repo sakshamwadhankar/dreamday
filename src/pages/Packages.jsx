@@ -17,7 +17,7 @@ const Packages = () => {
     guestCount: 150
   });
 
-  const prices = packagesData || {
+  const defaultPrices = {
     royalStage: 80000,
     entranceArch: 30000,
     saffronMandap: 50000,
@@ -26,6 +26,8 @@ const Packages = () => {
     ambientLight: 25000,
     cateringToggle: 800 // per guest
   };
+
+  const prices = { ...defaultPrices, ...(packagesData || {}) };
 
   const labels = {
     royalStage: 'Royal Stage Backdrop Setup',

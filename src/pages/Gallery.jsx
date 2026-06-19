@@ -1,37 +1,22 @@
 import React, { useState } from 'react';
 import { useScrollAnimation } from '../utils/useScrollAnimation';
 import { useLightbox } from '../utils/LightboxContext';
+import { useData } from '../context/DataContext';
 
 const Gallery = () => {
   useScrollAnimation();
   const { openLightbox } = useLightbox();
   const [filter, setFilter] = useState('all');
 
-  const galleryItems = [
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-1.jpg?v=9', title: 'Emerald Dreamcatcher Haldi', category: 'haldi' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9', title: 'Royal Monogram Stage', category: 'wedding' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9', title: 'Royal White Arch Stage', category: 'wedding' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-4.jpg?v=9', title: 'Elysian Banquet Tablescape', category: 'wedding' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9', title: 'Vibrant Haldi Styling', category: 'haldi' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-6.jpg?v=9', title: 'Traditional Yellow Haldi Backdrop', category: 'haldi' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-7.jpg?v=9', title: 'Traditional Saffron Haldi', category: 'haldi' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-8.jpg?v=9', title: 'Outdoor Haldi Swing', category: 'haldi' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-9.jpg?v=9', title: 'Saffron Mandap Layout', category: 'wedding' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-10.jpg?v=9', title: 'Gala Banquet Table Setup', category: 'corporate' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-11.jpg?v=9', title: 'Elite Corporate Stage Setup', category: 'corporate' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-12.jpg?v=9', title: 'Annual Business Award Night', category: 'corporate' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-13.jpg?v=9', title: 'Royal Pink Backdrop Stage', category: 'wedding' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-14.jpg?v=9', title: 'Product Launch Backdrop', category: 'corporate' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-15.jpg?v=9', title: 'Grand Floral Arch Stage', category: 'wedding' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-16.jpg?v=9', title: 'Shareholders Meeting Stage', category: 'corporate' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-17.jpg?v=9', title: 'Corporate Branding Pavilion', category: 'corporate' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-18.jpg?v=9', title: 'Executive VIP Lounge Area', category: 'corporate' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-19.jpg?v=9', title: 'Blue Theme Gala Banquet', category: 'corporate' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-20.jpg?v=9', title: 'Bespoke Monogram Wedding Stage', category: 'wedding' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-21.jpg?v=9', title: 'Elysian Crystal Stage', category: 'wedding' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-22.jpg?v=9', title: 'Symphony of Marigolds', category: 'haldi' },
-    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-23.jpg?v=9', title: 'Royal Blue & White Stage', category: 'wedding' }
-  ];
+  const { galleryData } = useData();
+
+  // Use Firebase data if available, otherwise fallback to empty array
+  // We map the Firebase schema (url, title, type) to what the frontend expects (src, title, category)
+  const dynamicGallery = galleryData ? galleryData.map(item => ({
+    src: item.url,
+    title: item.title || 'Gallery Image',
+    category: item.type || 'uncategorized'
+  })) : [];
 
   return (
     <main>
@@ -52,7 +37,7 @@ const Gallery = () => {
           </div>
           
           <div className="gallery-grid" id="dynamic-gallery-grid">
-              {galleryItems.filter(item => filter === 'all' || item.category === filter).map((item, idx) => (
+              {dynamicGallery.filter(item => filter === 'all' || item.category === filter).map((item, idx) => (
                   <div key={idx} className="gallery-item" data-category={item.category} data-animate onClick={() => openLightbox(item.src)}>
                       <img src={item.src} alt={item.title} />
                       <div className="gallery-overlay">

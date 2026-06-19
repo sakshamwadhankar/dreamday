@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Agentation } from 'agentation';
 import { seedDefaultData } from './utils/seedData';
 import { LightboxProvider } from './utils/LightboxContext';
 import Navbar from './components/Navbar';
@@ -17,8 +18,6 @@ import Videos from './pages/Videos';
 import Inquire from './pages/Inquire';
 import Manager from './pages/Manager';
 import Blog from './pages/Blog';
-import Testimonials from './pages/Testimonials';
-import Portfolio from './pages/Portfolio';
 import { DataProvider } from './context/DataContext';
 
 function App() {
@@ -44,10 +43,9 @@ function App() {
             <Route path="/inquire" element={<Inquire />} />
             <Route path="/manager" element={<Manager />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
           <Footer />
+          <Agentation />
         </Router>
       </LightboxProvider>
     </DataProvider>

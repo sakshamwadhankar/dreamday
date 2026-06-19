@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { useScrollAnimation } from '../utils/useScrollAnimation';
+import { useData } from '../context/DataContext';
 
 const Testimonials = () => {
   useScrollAnimation();
 
-  const storedTestimonials = JSON.parse(localStorage.getItem('dreamday_testimonials') || '[]');
+  const { testimonialsData } = useData();
+  
+  // Map Firebase data to match frontend structure
+  const storedTestimonials = testimonialsData.map(t => ({
+    text: t.review,
+    author: t.clientName,
+    event: t.eventType,
+  }));
+
+  // Fallback handled by DataContext defaultTestimonials now
+
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
   useEffect(() => {
