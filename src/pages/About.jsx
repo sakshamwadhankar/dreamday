@@ -25,7 +25,7 @@ const About = () => {
   return (
     <main>
       {/* About Page Hero Banner */}
-      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/wedding-red.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
+      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/wedding-red.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline" data-animate data-delay="100ms">✦ Who We Are ✦</p>
           <h2 data-animate data-delay="250ms">About <span className="gold-text">Our Company</span></h2>
           <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Discover the passion, values, and meticulous craft behind Pune's finest celebrations.</p>
@@ -35,13 +35,13 @@ const About = () => {
           <div className="about-container">
               <div className="about-img" data-animate>
                   <div className="about-slideshow">
-                      <img src="images/wedding-red.jpg" alt="About Slideshow 1" className="active" />
-                      <img src="images/event-1.jpg?v=9" alt="About Slideshow 2" />
-                      <img src="images/event-2.jpg?v=9" alt="About Slideshow 3" />
-                      <img src="images/event-3.jpg?v=9" alt="About Slideshow 4" />
-                      <img src="images/event-5.jpg?v=9" alt="About Slideshow 5" />
-                      <img src="images/event-9.jpg?v=9" alt="About Slideshow 6" />
-                      <img src="images/event-21.jpg?v=9" alt="About Slideshow 7" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/wedding-red.jpg" alt="About Slideshow 1" className="active" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-1.jpg?v=9" alt="About Slideshow 2" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9" alt="About Slideshow 3" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9" alt="About Slideshow 4" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9" alt="About Slideshow 5" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-9.jpg?v=9" alt="About Slideshow 6" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-21.jpg?v=9" alt="About Slideshow 7" />
                   </div>
               </div>
               <div className="about-content" data-animate>

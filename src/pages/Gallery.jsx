@@ -8,35 +8,35 @@ const Gallery = () => {
   const [filter, setFilter] = useState('all');
 
   const galleryItems = [
-    { src: 'images/event-1.jpg?v=9', title: 'Emerald Dreamcatcher Haldi', category: 'haldi' },
-    { src: 'images/event-2.jpg?v=9', title: 'Royal Monogram Stage', category: 'wedding' },
-    { src: 'images/event-3.jpg?v=9', title: 'Royal White Arch Stage', category: 'wedding' },
-    { src: 'images/event-4.jpg?v=9', title: 'Elysian Banquet Tablescape', category: 'wedding' },
-    { src: 'images/event-5.jpg?v=9', title: 'Vibrant Haldi Styling', category: 'haldi' },
-    { src: 'images/event-6.jpg?v=9', title: 'Traditional Yellow Haldi Backdrop', category: 'haldi' },
-    { src: 'images/event-7.jpg?v=9', title: 'Traditional Saffron Haldi', category: 'haldi' },
-    { src: 'images/event-8.jpg?v=9', title: 'Outdoor Haldi Swing', category: 'haldi' },
-    { src: 'images/event-9.jpg?v=9', title: 'Saffron Mandap Layout', category: 'wedding' },
-    { src: 'images/event-10.jpg?v=9', title: 'Gala Banquet Table Setup', category: 'corporate' },
-    { src: 'images/event-11.jpg?v=9', title: 'Elite Corporate Stage Setup', category: 'corporate' },
-    { src: 'images/event-12.jpg?v=9', title: 'Annual Business Award Night', category: 'corporate' },
-    { src: 'images/event-13.jpg?v=9', title: 'Royal Pink Backdrop Stage', category: 'wedding' },
-    { src: 'images/event-14.jpg?v=9', title: 'Product Launch Backdrop', category: 'corporate' },
-    { src: 'images/event-15.jpg?v=9', title: 'Grand Floral Arch Stage', category: 'wedding' },
-    { src: 'images/event-16.jpg?v=9', title: 'Shareholders Meeting Stage', category: 'corporate' },
-    { src: 'images/event-17.jpg?v=9', title: 'Corporate Branding Pavilion', category: 'corporate' },
-    { src: 'images/event-18.jpg?v=9', title: 'Executive VIP Lounge Area', category: 'corporate' },
-    { src: 'images/event-19.jpg?v=9', title: 'Blue Theme Gala Banquet', category: 'corporate' },
-    { src: 'images/event-20.jpg?v=9', title: 'Bespoke Monogram Wedding Stage', category: 'wedding' },
-    { src: 'images/event-21.jpg?v=9', title: 'Elysian Crystal Stage', category: 'wedding' },
-    { src: 'images/event-22.jpg?v=9', title: 'Symphony of Marigolds', category: 'haldi' },
-    { src: 'images/event-23.jpg?v=9', title: 'Royal Blue & White Stage', category: 'wedding' }
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-1.jpg?v=9', title: 'Emerald Dreamcatcher Haldi', category: 'haldi' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9', title: 'Royal Monogram Stage', category: 'wedding' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9', title: 'Royal White Arch Stage', category: 'wedding' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-4.jpg?v=9', title: 'Elysian Banquet Tablescape', category: 'wedding' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9', title: 'Vibrant Haldi Styling', category: 'haldi' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-6.jpg?v=9', title: 'Traditional Yellow Haldi Backdrop', category: 'haldi' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-7.jpg?v=9', title: 'Traditional Saffron Haldi', category: 'haldi' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-8.jpg?v=9', title: 'Outdoor Haldi Swing', category: 'haldi' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-9.jpg?v=9', title: 'Saffron Mandap Layout', category: 'wedding' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-10.jpg?v=9', title: 'Gala Banquet Table Setup', category: 'corporate' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-11.jpg?v=9', title: 'Elite Corporate Stage Setup', category: 'corporate' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-12.jpg?v=9', title: 'Annual Business Award Night', category: 'corporate' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-13.jpg?v=9', title: 'Royal Pink Backdrop Stage', category: 'wedding' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-14.jpg?v=9', title: 'Product Launch Backdrop', category: 'corporate' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-15.jpg?v=9', title: 'Grand Floral Arch Stage', category: 'wedding' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-16.jpg?v=9', title: 'Shareholders Meeting Stage', category: 'corporate' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-17.jpg?v=9', title: 'Corporate Branding Pavilion', category: 'corporate' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-18.jpg?v=9', title: 'Executive VIP Lounge Area', category: 'corporate' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-19.jpg?v=9', title: 'Blue Theme Gala Banquet', category: 'corporate' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-20.jpg?v=9', title: 'Bespoke Monogram Wedding Stage', category: 'wedding' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-21.jpg?v=9', title: 'Elysian Crystal Stage', category: 'wedding' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-22.jpg?v=9', title: 'Symphony of Marigolds', category: 'haldi' },
+    { src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-23.jpg?v=9', title: 'Royal Blue & White Stage', category: 'wedding' }
   ];
 
   return (
     <main>
       {/* Gallery Hero Section */}
-      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/blue-stage-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
+      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/blue-stage-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline">✦ Royal Visual Delights ✦</p>
           <h2>Our <span className="gold-text">Creations Gallery</span></h2>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Explore our stunning royal wedding stages, vibrant traditional haldi setups, and elite corporate decors designed by Mr. Ayush Kale.</p>
@@ -73,8 +73,8 @@ const Gallery = () => {
                   {/* Video 1 */}
                   <div className="video-trio-card" id="trio-player-1">
                       <span className="video-trio-badge">Wedding Teaser</span>
-                      <video autoPlay muted playsInline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style={{ backgroundImage: "url('images/event-3.jpg?v=9')" }}>
-                          <source src="images/video-1.mp4" type="video/mp4" />
+                      <video autoPlay muted playsInline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style={{ backgroundImage: "url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9')" }}>
+                          <source src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-1.mp4" type="video/mp4" />
                       </video>
                       <div className="video-trio-overlay">
                           <h3>Wedding Entrance Highlights</h3>
@@ -85,8 +85,8 @@ const Gallery = () => {
                   {/* Video 2 */}
                   <div className="video-trio-card" id="trio-player-2">
                       <span className="video-trio-badge">Stage Walkthrough</span>
-                      <video autoPlay muted playsInline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style={{ backgroundImage: "url('images/event-2.jpg?v=9')" }}>
-                          <source src="images/video-2.mp4" type="video/mp4" />
+                      <video autoPlay muted playsInline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style={{ backgroundImage: "url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9')" }}>
+                          <source src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-2.mp4" type="video/mp4" />
                       </video>
                       <div className="video-trio-overlay">
                           <h3>Grand Reception Decor Reel</h3>
@@ -97,8 +97,8 @@ const Gallery = () => {
                   {/* Video 3 */}
                   <div className="video-trio-card" id="trio-player-3">
                       <span className="video-trio-badge">Haldi Highlight</span>
-                      <video autoPlay muted playsInline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style={{ backgroundImage: "url('images/event-5.jpg?v=9')" }}>
-                          <source src="images/video-3.mp4" type="video/mp4" />
+                      <video autoPlay muted playsInline preload="auto" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style={{ backgroundImage: "url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9')" }}>
+                          <source src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-3.mp4" type="video/mp4" />
                       </video>
                       <div className="video-trio-overlay">
                           <h3>Vibrant Haldi Ceremony Clip</h3>

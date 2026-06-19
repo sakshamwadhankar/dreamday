@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useScrollAnimation } from '../utils/useScrollAnimation';
+import { useData } from '../context/DataContext';
 
 const Packages = () => {
   useScrollAnimation();
+  const { packagesData } = useData();
 
   const [estimatorState, setEstimatorState] = useState({
     royalStage: true,
@@ -15,7 +17,7 @@ const Packages = () => {
     guestCount: 150
   });
 
-  const prices = {
+  const prices = packagesData || {
     royalStage: 80000,
     entranceArch: 30000,
     saffronMandap: 50000,
@@ -81,7 +83,7 @@ const Packages = () => {
   return (
     <main>
       {/* Packages Hero Section */}
-      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/blue-stage-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
+      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/blue-stage-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline">✦ Pricing & Tiers ✦</p>
           <h2>Luxury <span className="gold-text">Event Packages</span></h2>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Curated design packages tailored for your dream celebrations, stages, and premium feasts.</p>
@@ -97,7 +99,7 @@ const Packages = () => {
                       <h3>Royal Elite Wedding Stage</h3>
                       <div className="package-price">
                           <span className="currency">₹</span>
-                          <span className="amount">1,50,000</span>
+                          <span className="amount">{(prices.royalStage + prices.entranceArch + prices.ledWall).toLocaleString('en-IN')}</span>
                           <span className="period">Starting</span>
                       </div>
                   </div>
@@ -122,7 +124,7 @@ const Packages = () => {
                       <h3>Vibrant Shahnaz Haldi</h3>
                       <div className="package-price">
                           <span className="currency">₹</span>
-                          <span className="amount">60,000</span>
+                          <span className="amount">{(prices.haldiSwing + 40000).toLocaleString('en-IN')}</span>
                           <span className="period">Starting</span>
                       </div>
                   </div>
@@ -147,7 +149,7 @@ const Packages = () => {
                       <h3>Imperial Gala Stage</h3>
                       <div className="package-price">
                           <span className="currency">₹</span>
-                          <span className="amount">1,20,000</span>
+                          <span className="amount">{(prices.royalStage + prices.ledWall).toLocaleString('en-IN')}</span>
                           <span className="period">Starting</span>
                       </div>
                   </div>
@@ -172,7 +174,7 @@ const Packages = () => {
                       <h3>Signature Catering</h3>
                       <div className="package-price">
                           <span className="currency">₹</span>
-                          <span className="amount">800</span>
+                          <span className="amount">{prices.cateringToggle.toLocaleString('en-IN')}</span>
                           <span className="period">Per Plate</span>
                       </div>
                   </div>

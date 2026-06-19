@@ -7,7 +7,7 @@ const Manager = () => {
   return (
     <main>
       {/* Manager Page Hero Banner */}
-      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/ayush-kale.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
+      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/ayush-kale.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline" data-animate data-delay="100ms">✦ Creative Direction ✦</p>
           <h2 data-animate data-delay="250ms">Meet <span className="gold-text">Ayush Kale</span></h2>
           <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>The visionary designer, founder, and lead curator of Pune's royal setups.</p>
@@ -17,7 +17,7 @@ const Manager = () => {
           <div className="manager-container">
               <div className="manager-img-wrapper" data-animate>
                   <div className="manager-img">
-                      <img src="images/ayush-kale.jpg" alt="Mr. Ayush Kale" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/ayush-kale.jpg" alt="Mr. Ayush Kale" />
                   </div>
               </div>
               <div className="manager-info" data-animate>
@@ -44,27 +44,27 @@ const Manager = () => {
           </div>
           <div className="instagram-grid">
               <div className="instagram-item" onClick={() => window.open('https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==', '_blank')}>
-                  <img src="images/event-1.jpg?v=9" alt="Instagram post 1" />
+                  <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-1.jpg?v=9" alt="Instagram post 1" />
                   <div className="instagram-overlay"><i className="fa-brands fa-instagram"></i> View Post</div>
               </div>
               <div className="instagram-item" onClick={() => window.open('https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==', '_blank')}>
-                  <img src="images/event-2.jpg?v=9" alt="Instagram post 2" />
+                  <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9" alt="Instagram post 2" />
                   <div className="instagram-overlay"><i className="fa-brands fa-instagram"></i> View Post</div>
               </div>
               <div className="instagram-item" onClick={() => window.open('https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==', '_blank')}>
-                  <img src="images/event-5.jpg?v=9" alt="Instagram post 3" />
+                  <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9" alt="Instagram post 3" />
                   <div className="instagram-overlay"><i className="fa-brands fa-instagram"></i> View Post</div>
               </div>
               <div className="instagram-item" onClick={() => window.open('https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==', '_blank')}>
-                  <img src="images/event-9.jpg?v=9" alt="Instagram post 4" />
+                  <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-9.jpg?v=9" alt="Instagram post 4" />
                   <div className="instagram-overlay"><i className="fa-brands fa-instagram"></i> View Post</div>
               </div>
               <div className="instagram-item" onClick={() => window.open('https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==', '_blank')}>
-                  <img src="images/event-21.jpg?v=9" alt="Instagram post 5" />
+                  <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-21.jpg?v=9" alt="Instagram post 5" />
                   <div className="instagram-overlay"><i className="fa-brands fa-instagram"></i> View Post</div>
               </div>
               <div className="instagram-item" onClick={() => window.open('https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==', '_blank')}>
-                  <img src="images/blue-stage-new.jpg" alt="Instagram post 6" />
+                  <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/blue-stage-new.jpg" alt="Instagram post 6" />
                   <div className="instagram-overlay"><i className="fa-brands fa-instagram"></i> View Post</div>
               </div>
           </div>

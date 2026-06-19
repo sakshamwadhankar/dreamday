@@ -20,7 +20,7 @@ const Services = () => {
   return (
     <main>
       {/* Services Page Hero Banner */}
-      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/wedding-stage-green.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
+      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/wedding-stage-green.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline" data-animate data-delay="100ms">✦ What We Offer ✦</p>
           <h2 data-animate data-delay="250ms">Our <span className="gold-text">Bespoke Services</span></h2>
           <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Explore Pune's most premium luxury event decor, planning, and multi-cuisine catering solutions.</p>
@@ -31,7 +31,7 @@ const Services = () => {
               {/* Service 1: Wedding Decor */}
               <div className="service-card" data-animate onClick={() => openModal('wedding-decor')}>
                   <div className="service-img-wrapper">
-                      <img src="images/wedding-stage-green.jpg" alt="Wedding Decor" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/wedding-stage-green.jpg" alt="Wedding Decor" className="service-card-img" />
                       <span className="service-badge">Most Popular</span>
                   </div>
                   <div className="service-card-content">
@@ -49,7 +49,7 @@ const Services = () => {
               {/* Service 2: Haldi & Mehndi Setup */}
               <div className="service-card" data-animate onClick={() => openModal('haldi-mehndi')}>
                   <div className="service-img-wrapper">
-                      <img src="images/haldi-yellow.jpg" alt="Haldi & Mehndi Setup" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/haldi-yellow.jpg" alt="Haldi & Mehndi Setup" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-palette"></i></div>
@@ -66,7 +66,7 @@ const Services = () => {
               {/* Service 3: Reception Decor */}
               <div className="service-card" data-animate onClick={() => openModal('reception-decor')}>
                   <div className="service-img-wrapper">
-                      <img src="images/wedding-red.jpg" alt="Reception Decor" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/wedding-red.jpg" alt="Reception Decor" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-champagne-glasses"></i></div>
@@ -83,7 +83,7 @@ const Services = () => {
               {/* Service 4: Gourmet Catering */}
               <div className="service-card" data-animate onClick={() => openModal('gourmet-catering')}>
                   <div className="service-img-wrapper">
-                      <img src="images/event-10.jpg" alt="Gourmet Catering" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-10.jpg" alt="Gourmet Catering" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-hotdog"></i></div>
@@ -100,7 +100,7 @@ const Services = () => {
               {/* Service 5: Themed Parties & Birthdays */}
               <div className="service-card" data-animate onClick={() => openModal('themed-parties')}>
                   <div className="service-img-wrapper">
-                      <img src="images/event-12.jpg" alt="Themed Parties & Birthdays" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-12.jpg" alt="Themed Parties & Birthdays" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-cake-candles"></i></div>
@@ -117,7 +117,7 @@ const Services = () => {
               {/* Service 6: Corporate Galas */}
               <div className="service-card" data-animate onClick={() => openModal('corporate-galas')}>
                   <div className="service-img-wrapper">
-                      <img src="images/event-14.jpg" alt="Corporate Galas" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-14.jpg" alt="Corporate Galas" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-briefcase"></i></div>
@@ -134,7 +134,7 @@ const Services = () => {
               {/* Service 7: Photography & Videography */}
               <div className="service-card" data-animate onClick={() => openModal('photography-videography')}>
                   <div className="service-img-wrapper">
-                      <img src="images/event-17.jpg" alt="Photography & Videography" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-17.jpg" alt="Photography & Videography" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-camera"></i></div>
@@ -151,7 +151,7 @@ const Services = () => {
               {/* Service 8: Entertainment & Live Music */}
               <div className="service-card" data-animate onClick={() => openModal('entertainment-music')}>
                   <div className="service-img-wrapper">
-                      <img src="images/event-18.jpg" alt="Entertainment & Live Music" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-18.jpg" alt="Entertainment & Live Music" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-music"></i></div>
@@ -168,7 +168,7 @@ const Services = () => {
               {/* Service 9: Guest Transportation & Logistics */}
               <div className="service-card" data-animate onClick={() => openModal('transport-logistics')}>
                   <div className="service-img-wrapper">
-                      <img src="images/event-22.jpg" alt="Guest Transportation & Logistics" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-22.jpg" alt="Guest Transportation & Logistics" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-car"></i></div>
@@ -185,7 +185,7 @@ const Services = () => {
               {/* Service 10: Floral Arrangements (standalone) */}
               <div className="service-card" data-animate onClick={() => openModal('floral-arrangements')}>
                   <div className="service-img-wrapper">
-                      <img src="images/event-9.jpg" alt="Floral Arrangements" className="service-card-img" />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-9.jpg" alt="Floral Arrangements" className="service-card-img" />
                   </div>
                   <div className="service-card-content">
                       <div className="service-icon"><i className="fa-solid fa-seedling"></i></div>

@@ -19,6 +19,7 @@ import Manager from './pages/Manager';
 import Blog from './pages/Blog';
 import Testimonials from './pages/Testimonials';
 import Portfolio from './pages/Portfolio';
+import { DataProvider } from './context/DataContext';
 
 function App() {
   useEffect(() => {
@@ -27,27 +28,29 @@ function App() {
   }, []);
 
   return (
-    <LightboxProvider>
-      <Router>
-        <GlobalDecorations />
-        <CustomCursor />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/packages" element={<Packages />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/videos" element={<Videos />} />
-          <Route path="/inquire" element={<Inquire />} />
-          <Route path="/manager" element={<Manager />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </LightboxProvider>
+    <DataProvider>
+      <LightboxProvider>
+        <Router>
+          <GlobalDecorations />
+          <CustomCursor />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/packages" element={<Packages />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/videos" element={<Videos />} />
+            <Route path="/inquire" element={<Inquire />} />
+            <Route path="/manager" element={<Manager />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </LightboxProvider>
+    </DataProvider>
   );
 }
 

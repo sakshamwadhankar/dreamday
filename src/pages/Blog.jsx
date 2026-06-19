@@ -8,7 +8,7 @@ const Blog = () => {
   return (
     <main>
       {/* Blog Hero Section */}
-      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/blue-stage-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
+      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/blue-stage-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline" data-animate data-delay="100ms">✦ Design & Decor Journal ✦</p>
           <h2 data-animate data-delay="250ms">The <span className="gold-text">Bespoke Event Blog</span></h2>
           <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Tips, trends, and inspiration from Pune's premier luxury event management and design team.</p>
@@ -21,7 +21,7 @@ const Blog = () => {
               {/* Article 1 */}
               <article className="portfolio-card" data-animate style={{ display: 'flex', flexDirection: 'column' }}>
                   <div className="portfolio-img-wrapper" style={{ height: '220px' }}>
-                      <img src="images/event-3.jpg?v=9" alt="Top Wedding Trends 2026" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9" alt="Top Wedding Trends 2026" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div className="portfolio-info" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                       <div>
@@ -36,7 +36,7 @@ const Blog = () => {
               {/* Article 2 */}
               <article className="portfolio-card" data-animate style={{ display: 'flex', flexDirection: 'column' }}>
                   <div className="portfolio-img-wrapper" style={{ height: '220px' }}>
-                      <img src="images/event-4.jpg?v=9" alt="Gourmet Catering Presentation" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-4.jpg?v=9" alt="Gourmet Catering Presentation" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div className="portfolio-info" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                       <div>
@@ -51,7 +51,7 @@ const Blog = () => {
               {/* Article 3 */}
               <article className="portfolio-card" data-animate style={{ display: 'flex', flexDirection: 'column' }}>
                   <div className="portfolio-img-wrapper" style={{ height: '220px' }}>
-                      <img src="images/event-5.jpg?v=9" alt="Vibrant Haldi Swings" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src="https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9" alt="Vibrant Haldi Swings" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div className="portfolio-info" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                       <div>

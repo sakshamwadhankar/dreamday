@@ -12,7 +12,7 @@ const Portfolio = () => {
     {
         type: 'photo',
         category: 'haldi',
-        src: 'images/event-1.jpg?v=9',
+        src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-1.jpg?v=9',
         tag: 'Haldi Ceremony',
         title: 'Emerald Dreamcatcher Haldi',
         desc: 'Bespoke green-themed haldi setup with fresh marigolds and handcrafted dreamcatchers.',
@@ -23,7 +23,7 @@ const Portfolio = () => {
     {
         type: 'photo',
         category: 'wedding',
-        src: 'images/event-2.jpg?v=9',
+        src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9',
         tag: 'Wedding Decor',
         title: 'Royal Monogram Stage',
         desc: 'A grand, royal wedding stage featuring a custom golden monogram centerpiece and ambient warm lighting.',
@@ -31,12 +31,12 @@ const Portfolio = () => {
         quote: '"Ayush Kale turned our dream stage into reality. The monogram was outstanding."',
         author: '- Rahul & Priya S.'
     },
-    { type: 'photo', category: 'wedding', src: 'images/event-3.jpg?v=9', tag: 'Wedding Decor', title: 'Royal White Arch Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'wedding', src: 'images/event-4.jpg?v=9', tag: 'Wedding Decor', title: 'Elysian Banquet Tablescape', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'wedding', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9', tag: 'Wedding Decor', title: 'Royal White Arch Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'wedding', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-4.jpg?v=9', tag: 'Wedding Decor', title: 'Elysian Banquet Tablescape', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
     {
         type: 'photo',
         category: 'haldi',
-        src: 'images/event-5.jpg?v=9',
+        src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9',
         tag: 'Haldi Ceremony',
         title: 'Vibrant Haldi Styling',
         desc: 'Traditional yellow haldi theme blended with contemporary structures and floral arches.',
@@ -44,15 +44,15 @@ const Portfolio = () => {
         quote: '"The vibrant setup completely transformed our family courtyard."',
         author: '- Pooja R.'
     },
-    { type: 'photo', category: 'haldi', src: 'images/event-6.jpg?v=9', tag: 'Haldi Ceremony', title: 'Traditional Yellow Haldi Backdrop', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'haldi', src: 'images/event-7.jpg?v=9', tag: 'Haldi Ceremony', title: 'Traditional Saffron Haldi', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'haldi', src: 'images/event-8.jpg?v=9', tag: 'Haldi Ceremony', title: 'Outdoor Haldi Swing', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'wedding', src: 'images/event-9.jpg?v=9', tag: 'Wedding Decor', title: 'Saffron Mandap Layout', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'corporate', src: 'images/event-10.jpg?v=9', tag: 'Corporate Event', title: 'Gala Banquet Table Setup', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'haldi', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-6.jpg?v=9', tag: 'Haldi Ceremony', title: 'Traditional Yellow Haldi Backdrop', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'haldi', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-7.jpg?v=9', tag: 'Haldi Ceremony', title: 'Traditional Saffron Haldi', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'haldi', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-8.jpg?v=9', tag: 'Haldi Ceremony', title: 'Outdoor Haldi Swing', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'wedding', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-9.jpg?v=9', tag: 'Wedding Decor', title: 'Saffron Mandap Layout', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'corporate', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-10.jpg?v=9', tag: 'Corporate Event', title: 'Gala Banquet Table Setup', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
     {
         type: 'photo',
         category: 'corporate',
-        src: 'images/event-11.jpg?v=9',
+        src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-11.jpg?v=9',
         tag: 'Corporate Event',
         title: 'Elite Corporate Stage Setup',
         desc: 'Professional panel stage branding with matte flooring, structural trusses, and HD screen integration.',
@@ -60,36 +60,36 @@ const Portfolio = () => {
         quote: '"Highly professional setup that matched our international corporate branding standards."',
         author: '- TechCorp Summit Committee'
     },
-    { type: 'photo', category: 'corporate', src: 'images/event-12.jpg?v=9', tag: 'Corporate Event', title: 'Annual Business Award Night', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'wedding', src: 'images/event-13.jpg?v=9', tag: 'Wedding Decor', title: 'Royal Pink Backdrop Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'corporate', src: 'images/event-14.jpg?v=9', tag: 'Corporate Event', title: 'Product Launch Backdrop', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'wedding', src: 'images/event-15.jpg?v=9', tag: 'Wedding Decor', title: 'Grand Floral Arch Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'corporate', src: 'images/event-16.jpg?v=9', tag: 'Corporate Event', title: 'Shareholders Meeting Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'corporate', src: 'images/event-17.jpg?v=9', tag: 'Corporate Event', title: 'Corporate Branding Pavilion', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'corporate', src: 'images/event-18.jpg?v=9', tag: 'Corporate Event', title: 'Executive VIP Lounge Area', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'corporate', src: 'images/event-19.jpg?v=9', tag: 'Corporate Event', title: 'Blue Theme Gala Banquet', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'wedding', src: 'images/event-20.jpg?v=9', tag: 'Wedding Decor', title: 'Bespoke Monogram Wedding Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'wedding', src: 'images/event-21.jpg?v=9', tag: 'Wedding Decor', title: 'Elysian Crystal Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'haldi', src: 'images/event-22.jpg?v=9', tag: 'Haldi Ceremony', title: 'Symphony of Marigolds', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'photo', category: 'wedding', src: 'images/event-23.jpg?v=9', tag: 'Wedding Decor', title: 'Royal Blue & White Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
-    { type: 'video', category: 'video', src: 'images/video-1.mp4', poster: 'images/event-3.jpg?v=9', tag: 'Video Highlights', title: 'Wedding Entrance Highlights', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-2.mp4', poster: 'images/event-2.jpg?v=9', tag: 'Video Highlights', title: 'Grand Reception Decor Reel', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-3.mp4', poster: 'images/event-5.jpg?v=9', tag: 'Video Highlights', title: 'Vibrant Haldi Ceremony Clip', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-4.mp4', poster: 'images/event-4.jpg?v=9', tag: 'Video Highlights', title: 'Catering Buffet Setup Video', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-5.mp4', poster: 'images/event-21.jpg?v=9', tag: 'Video Highlights', title: 'Bespoke Floral Work Highlights', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-6.mp4', poster: 'images/event-3.jpg?v=9', tag: 'Video Highlights', title: 'Lawn Celebration Tour', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-7.mp4', poster: 'images/event-2.jpg?v=9', tag: 'Video Highlights', title: 'Bride & Groom Entrance Setup', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-8.mp4', poster: 'images/event-8.jpg?v=9', tag: 'Video Highlights', title: 'Traditional Marigold Swing Tour', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-9.mp4', poster: 'images/event-21.jpg?v=9', tag: 'Video Highlights', title: 'Banquet Stage Decoration', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-10.mp4', poster: 'images/event-7.jpg?v=9', tag: 'Video Highlights', title: 'Haldi Ceremony Highlights', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-11.mp4', poster: 'images/event-22.jpg?v=9', tag: 'Video Highlights', title: 'Haldi Ceremony of Eram', desc: 'Cinematic video compilation of decorations and Feasts.' },
-    { type: 'video', category: 'video', src: 'images/video-12.mp4', poster: 'images/event-9.jpg?v=9', tag: 'Video Highlights', title: 'Saffron Mandap Cinematic', desc: 'Cinematic video compilation of decorations and Feasts.' }
+    { type: 'photo', category: 'corporate', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-12.jpg?v=9', tag: 'Corporate Event', title: 'Annual Business Award Night', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'wedding', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-13.jpg?v=9', tag: 'Wedding Decor', title: 'Royal Pink Backdrop Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'corporate', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-14.jpg?v=9', tag: 'Corporate Event', title: 'Product Launch Backdrop', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'wedding', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-15.jpg?v=9', tag: 'Wedding Decor', title: 'Grand Floral Arch Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'corporate', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-16.jpg?v=9', tag: 'Corporate Event', title: 'Shareholders Meeting Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'corporate', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-17.jpg?v=9', tag: 'Corporate Event', title: 'Corporate Branding Pavilion', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'corporate', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-18.jpg?v=9', tag: 'Corporate Event', title: 'Executive VIP Lounge Area', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'corporate', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-19.jpg?v=9', tag: 'Corporate Event', title: 'Blue Theme Gala Banquet', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'wedding', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-20.jpg?v=9', tag: 'Wedding Decor', title: 'Bespoke Monogram Wedding Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'wedding', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-21.jpg?v=9', tag: 'Wedding Decor', title: 'Elysian Crystal Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'haldi', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-22.jpg?v=9', tag: 'Haldi Ceremony', title: 'Symphony of Marigolds', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'photo', category: 'wedding', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-23.jpg?v=9', tag: 'Wedding Decor', title: 'Royal Blue & White Stage', desc: 'Signature design setup delivered by Mr. Ayush Kale.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-1.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9', tag: 'Video Highlights', title: 'Wedding Entrance Highlights', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-2.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9', tag: 'Video Highlights', title: 'Grand Reception Decor Reel', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-3.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9', tag: 'Video Highlights', title: 'Vibrant Haldi Ceremony Clip', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-4.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-4.jpg?v=9', tag: 'Video Highlights', title: 'Catering Buffet Setup Video', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-5.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-21.jpg?v=9', tag: 'Video Highlights', title: 'Bespoke Floral Work Highlights', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-6.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9', tag: 'Video Highlights', title: 'Lawn Celebration Tour', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-7.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9', tag: 'Video Highlights', title: 'Bride & Groom Entrance Setup', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-8.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-8.jpg?v=9', tag: 'Video Highlights', title: 'Traditional Marigold Swing Tour', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-9.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-21.jpg?v=9', tag: 'Video Highlights', title: 'Banquet Stage Decoration', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-10.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-7.jpg?v=9', tag: 'Video Highlights', title: 'Haldi Ceremony Highlights', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-11.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-22.jpg?v=9', tag: 'Video Highlights', title: 'Haldi Ceremony of Eram', desc: 'Cinematic video compilation of decorations and Feasts.' },
+    { type: 'video', category: 'video', src: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/video-12.mp4', poster: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-9.jpg?v=9', tag: 'Video Highlights', title: 'Saffron Mandap Cinematic', desc: 'Cinematic video compilation of decorations and Feasts.' }
   ];
 
   return (
     <main>
       {/* Portfolio Hero Section */}
-      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('images/blue-stage-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
+      <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/blue-stage-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline" data-animate data-delay="100ms">✦ Our Work Showcase ✦</p>
           <h2 data-animate data-delay="250ms">The <span className="gold-text">Bespoke Portfolio</span></h2>
           <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>A curated gallery of our premium stage setups, haldi ceremonies, and luxury event design.</p>
