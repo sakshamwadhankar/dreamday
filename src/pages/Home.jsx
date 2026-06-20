@@ -195,7 +195,7 @@ const Home = () => {
               {/* Bottom Right Text */}
               <div className="hero-bottom-text" data-animate="slide-right" data-delay="400ms" style={{ position: 'absolute', bottom: '15%', right: '2%', maxWidth: '320px', textAlign: 'left', zIndex: 3 }}>
                   <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(0.85rem, 1vw, 1rem)', color: '#E2E8F0', textShadow: '1px 2px 8px rgba(0,0,0,0.9)', lineHeight: '1.8', fontWeight: '300', margin: 0, letterSpacing: '0.5px' }}>
-                      Make Your Dream Day Come True by Turning Your Special Moments into Unforgettable Celebrations
+                      Make Your Dream Day Come True by Turning Your Special Moments into Unforgettable Celebrations with Dream Day Events
                   </p>
               </div>
           </div>
@@ -400,7 +400,7 @@ const Home = () => {
                   <p className="hero-tagline">✦ The Creative Visionary ✦</p>
                   <h3>Mr. Ayush Kale</h3>
                   <h4 className="manager-title">Founder & Lead Event Manager</h4>
-                  <p className="manager-bio">"An event is not just a date on a calendar; it is a canvas of emotions, beauty, and memories. At Dream Day Events, we bring your visual imagination to life. We believe in providing the absolute best in class aesthetics and flawless execution so you can enjoy your dream day without a worry."</p>
+                  <p className="manager-bio">"Every celebration tells a story, and our job is to make it beautiful, memorable, and uniquely yours. At Dream Day Events, we combine creativity, elegance, and meticulous planning to transform your dream event into a reality you'll cherish forever"</p>
                   <p className="manager-bio" style={{ fontSize: '0.95rem', fontStyle: 'italic' }}>Under Mr. Ayush Kale's creative direction, Dream Day Events has successfully coordinated over 500+ premium weddings and corporate galas, bringing 9+ years of expertise to every single detail.</p>
                   <div className="manager-socials">
                       <a href="https://www.instagram.com/royal_eventanddecor?igsh=MXQ5bDI0NzBkbmhoaQ==" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
@@ -446,7 +446,7 @@ const Home = () => {
               <div className="marquee-content">
                   {[
                       { name: 'Amit Deshpande', gender: 'boy', text: 'Excellent coordination! Mr. Ayush Kale managed the entire sangeet and catering display flawlessly. The guest comments on the food were incredible!', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-1.jpg?v=9' },
-                      { name: 'Neha Kulkarni', gender: 'girl', text: 'They transformed a simple banquet hall into a royal wedding palace. The gold frame elements and fresh flowers were outstanding. Highly recommended luxury planner in Pune!', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9' },
+                      { name: 'Neha Kulkarni', gender: 'girl', text: 'They transformed a simple banquet hall into a royal wedding palace. The gold frame elements and fresh flowers were outstanding. Highly recommended luxury planner in Nagpur!', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9' },
                       { name: 'Rajesh Sen', gender: 'boy', text: 'Top tier professionalism. Easy booking, premium catering setup, and gorgeous lighting design. The team was prompt and executed exactly what we signed on.', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9' },
                       { name: 'Priya Sharma', gender: 'girl', text: 'Dream Day Events made my haldi ceremony look like a movie set. The vibrant yellow themes and floral props were perfect!', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9' },
                       { name: 'Vikram Joshi', gender: 'boy', text: 'Hosted our corporate gala with them. The stage branding and AV setup were top-notch. Our executives were extremely impressed.', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-14.jpg' },
@@ -457,7 +457,7 @@ const Home = () => {
                       { name: 'Kavita Iyer', gender: 'girl', text: 'Highly impressed with their outdoor lawn styling. The beachside sky-blue decor for our anniversary was a hit among guests.', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/blue-stage-new.jpg' },
                       // Duplicate for seamless scroll
                       { name: 'Amit Deshpande', gender: 'boy', text: 'Excellent coordination! Mr. Ayush Kale managed the entire sangeet and catering display flawlessly. The guest comments on the food were incredible!', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-1.jpg?v=9' },
-                      { name: 'Neha Kulkarni', gender: 'girl', text: 'They transformed a simple banquet hall into a royal wedding palace. The gold frame elements and fresh flowers were outstanding. Highly recommended luxury planner in Pune!', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9' },
+                      { name: 'Neha Kulkarni', gender: 'girl', text: 'They transformed a simple banquet hall into a royal wedding palace. The gold frame elements and fresh flowers were outstanding. Highly recommended luxury planner in Nagpur!', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-2.jpg?v=9' },
                       { name: 'Rajesh Sen', gender: 'boy', text: 'Top tier professionalism. Easy booking, premium catering setup, and gorgeous lighting design. The team was prompt and executed exactly what we signed on.', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg?v=9' },
                       { name: 'Priya Sharma', gender: 'girl', text: 'Dream Day Events made my haldi ceremony look like a movie set. The vibrant yellow themes and floral props were perfect!', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-5.jpg?v=9' },
                       { name: 'Vikram Joshi', gender: 'boy', text: 'Hosted our corporate gala with them. The stage branding and AV setup were top-notch. Our executives were extremely impressed.', img: 'https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-14.jpg' },
@@ -514,7 +514,7 @@ const Home = () => {
                                       </div>
                                       <div>
                                           <h4 style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: '600' }}>{r.name}</h4>
-                                          <span style={{ fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.6)' }}>Event — Pune</span>
+                                          <span style={{ fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.6)' }}>Event — Nagpur</span>
                                       </div>
                                   </div>
 

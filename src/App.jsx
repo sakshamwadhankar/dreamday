@@ -17,7 +17,6 @@ import Gallery from './pages/Gallery';
 import Videos from './pages/Videos';
 import Inquire from './pages/Inquire';
 import Manager from './pages/Manager';
-import Blog from './pages/Blog';
 import { DataProvider } from './context/DataContext';
 
 function App() {
@@ -42,7 +41,6 @@ function App() {
             <Route path="/videos" element={<Videos />} />
             <Route path="/inquire" element={<Inquire />} />
             <Route path="/manager" element={<Manager />} />
-            <Route path="/blog" element={<Blog />} />
           </Routes>
           <Footer />
           {window.location.hostname === 'localhost' && <Agentation />}

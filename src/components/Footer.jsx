@@ -48,7 +48,7 @@ const Footer = () => {
                 <h3>Contact Info</h3>
                 <p><i className="fa-solid fa-phone" style={{ color: 'var(--gold-primary)' }}></i> +91 84593 98321</p>
                 <p><i className="fa-solid fa-envelope" style={{ color: 'var(--gold-primary)' }}></i> Ayushkale0412@gmail.com</p>
-                <p><i className="fa-solid fa-location-dot" style={{ color: 'var(--gold-primary)' }}></i> Premium Plaza, Suite 402, Senapati Bapat Road, Pune</p>
+                <p><i className="fa-solid fa-location-dot" style={{ color: 'var(--gold-primary)' }}></i> Premium Plaza, Suite 402, Dharampeth, Nagpur</p>
                 <p><i className="fa-solid fa-clock" style={{ color: 'var(--gold-primary)' }}></i> Mon - Sun: 09:00 AM - 09:00 PM</p>
             </div>
 
@@ -56,7 +56,7 @@ const Footer = () => {
                 <h3>Find Us</h3>
                 <div style={{ borderRadius: '12px', overflow: 'hidden', height: '200px', marginTop: '15px', border: '1px solid var(--border-color)', boxShadow: '0 4px 15px rgba(0,0,0,0.2)' }}>
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.5975618451877!2d73.8299839!3d18.5308225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf70d8a0d0a5%3A0xe441618a38c23e65!2sSenapati%20Bapat%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709462553!2d78.96288091640625!3d21.161085900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" 
                         allowFullScreen="" 
                         loading="lazy" 
                         referrerPolicy="no-referrer-when-downgrade"

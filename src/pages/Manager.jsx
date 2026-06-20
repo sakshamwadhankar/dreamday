@@ -30,7 +30,7 @@ const Manager = () => {
       <header className="portfolio-hero" style={{ backgroundImage: `linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('${data.imageUrl}')`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline" data-animate data-delay="100ms">✦ Creative Direction ✦</p>
           <h2 data-animate data-delay="250ms">Meet <span className="gold-text">{data.name}</span></h2>
-          <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>The visionary designer, founder, and lead curator of Pune's royal setups.</p>
+          <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>The visionary designer, founder, and lead curator of Nagpur's royal setups.</p>
       </header>
       
       <section className="manager" id="manager">
@@ -42,7 +42,7 @@ const Manager = () => {
               </div>
               <div className="manager-info" data-animate>
                   <p className="hero-tagline">✦ The Creative Visionary ✦</p>
-
+                  <h3>{data.name}</h3>
                   <h4 className="manager-title">{data.title || 'Founder & Lead Event Manager'}</h4>
                   <p className="manager-bio">"Make Your Dream Day Come True with Dream Day Events"</p>
                   <p className="manager-bio" style={{ fontSize: '0.95rem', fontStyle: 'italic' }}>Under {data.name}'s creative direction, Dream Day Events has successfully coordinated over 500+ premium weddings and corporate galas, bringing 9+ years of expertise to every single detail.</p>

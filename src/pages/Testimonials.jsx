@@ -32,7 +32,7 @@ const Testimonials = () => {
       <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/event-3.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline" data-animate data-delay="100ms">✦ Kind Words ✦</p>
           <h2 data-animate data-delay="250ms">Client <span className="gold-text">Reviews</span></h2>
-          <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Read how we've brought smiles and royal decors to couples and clients in Pune.</p>
+          <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Read how we've brought smiles and royal decors to couples and clients in Nagpur.</p>
       </header>
       
       <section className="reviews-section" id="reviews">
@@ -68,7 +68,7 @@ const Testimonials = () => {
                           <div className="review-user-avatar">Amit</div>
                           <div className="review-user-details">
                               <h4>Amit Deshpande</h4>
-                              <span>Google Reviewer • Pune</span>
+                              <span>Google Reviewer • Nagpur</span>
                           </div>
                       </div>
                       <div className="reviews-stars" style={{ marginBottom: '10px' }}>
@@ -82,13 +82,13 @@ const Testimonials = () => {
                           <div className="review-user-avatar">Neha</div>
                           <div className="review-user-details">
                               <h4>Neha Kulkarni</h4>
-                              <span>Local Guide • Pune</span>
+                              <span>Local Guide • Nagpur</span>
                           </div>
                       </div>
                       <div className="reviews-stars" style={{ marginBottom: '10px' }}>
                           <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
                       </div>
-                      <p className="review-text">"They transformed a simple banquet hall into a royal wedding palace. The gold frame elements and fresh flowers were outstanding. Highly recommended luxury planner in Pune!"</p>
+                      <p className="review-text">"They transformed a simple banquet hall into a royal wedding palace. The gold frame elements and fresh flowers were outstanding. Highly recommended luxury planner in Nagpur!"</p>
                   </div>
                   {/* Review 3 */}
                   <div className="review-item-card">

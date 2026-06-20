@@ -103,7 +103,7 @@ const Gallery = () => {
       {/* Consultation CTA */}
       <section className="cta-banner" style={{ background: 'var(--bg-secondary)', borderTop: '1px solid var(--border-color)', textAlign: 'center', padding: '60px 5%' }}>
           <h3 style={{ fontSize: '2.2rem', marginBottom: '15px' }}>Have an event in mind? <span className="gold-text">Let's Craft It.</span></h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: '30px', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>Book your free 1-on-1 design layout consultation in Pune with Mr. Ayush Kale.</p>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '30px', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>Book your free 1-on-1 design layout consultation in Nagpur with Mr. Ayush Kale.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
               <a href="/inquire" className="btn btn-primary">Book Consultation</a>
               <a href="https://wa.me/918459398321?text=Hi%20Dream%20Day%20Events%2C%20I%20am%20interested%20in%20booking%20an%20event." target="_blank" rel="noopener noreferrer" className="btn btn-secondary">

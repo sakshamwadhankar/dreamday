@@ -171,14 +171,14 @@ const Inquire = () => {
                           <div className="info-icon"><i className="fa-solid fa-location-dot"></i></div>
                           <div className="info-text">
                               <h4>Office Address</h4>
-                              <p>Premium Plaza, Suite 402, Senapati Bapat Road, Pune, Maharashtra - 411016</p>
+                              <p>Premium Plaza, Suite 402, Dharampeth, Nagpur, Maharashtra - 440010</p>
                           </div>
                       </div>
                   </div>
 
                   <div className="map-placeholder">
                       <iframe 
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.5975618451877!2d73.8299839!3d18.5308225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf70d8a0d0a5%3A0xe441618a38c23e65!2sSenapati%20Bapat%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709462553!2d78.96288091640625!3d21.161085900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" 
                           allowFullScreen="" 
                           loading="lazy" 
                           referrerPolicy="no-referrer-when-downgrade"

@@ -23,7 +23,7 @@ const Services = () => {
       <header className="portfolio-hero" style={{ backgroundImage: "linear-gradient(135deg, rgba(30, 80, 150, 0.2) 0%, rgba(10, 25, 60, 0.6) 100%), url('https://storage.googleapis.com/dream-day-events-sw.firebasestorage.app/images/wedding-stage-green.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '120px 5% 60px 5%', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
           <p className="hero-tagline" data-animate data-delay="100ms">✦ What We Offer ✦</p>
           <h2 data-animate data-delay="250ms">Our <span className="gold-text">Bespoke Services</span></h2>
-          <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Explore Pune's most premium luxury event decor, planning, and multi-cuisine catering solutions.</p>
+          <p data-animate data-delay="400ms" style={{ color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '15px' }}>Explore Nagpur's most premium luxury event decor, planning, and multi-cuisine catering solutions.</p>
       </header>
 
       <section className="services" id="services" style={{ paddingTop: '80px' }}>

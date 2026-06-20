@@ -45,7 +45,7 @@ const Navbar = () => {
             <li><Link to="/gallery" className={`nav-link ${location.pathname === '/gallery' ? 'active' : ''}`} onClick={() => setMenuActive(false)}>Gallery</Link></li>
             <li><Link to="/videos" className={`nav-link ${location.pathname === '/videos' ? 'active' : ''}`} onClick={() => setMenuActive(false)}>Videos</Link></li>
             <li><Link to="/packages" className={`nav-link ${location.pathname === '/packages' ? 'active' : ''}`} onClick={() => setMenuActive(false)}>Packages</Link></li>
-            <li><Link to="/blog" className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`} onClick={() => setMenuActive(false)}>Blog</Link></li>
+
             <li><Link to="/manager" className={`nav-link ${location.pathname === '/manager' ? 'active' : ''}`} onClick={() => setMenuActive(false)}>Manager</Link></li>
             <li><Link to="/inquire" className={`nav-link ${location.pathname === '/inquire' ? 'active' : ''}`} onClick={() => setMenuActive(false)}>Contact</Link></li>
         </ul>

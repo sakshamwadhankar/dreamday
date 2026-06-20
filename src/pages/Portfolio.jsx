@@ -27,7 +27,7 @@ const Portfolio = () => {
         tag: 'Wedding Decor',
         title: 'Royal Monogram Stage',
         desc: 'A grand, royal wedding stage featuring a custom golden monogram centerpiece and ambient warm lighting.',
-        caseStudy: 'Constructed for a high-profile banquet wedding in Pune. Integrated a 40ft wide backdrop with velvet draping and automated lighting.',
+        caseStudy: 'Constructed for a high-profile banquet wedding in Nagpur. Integrated a 40ft wide backdrop with velvet draping and automated lighting.',
         quote: '"Ayush Kale turned our dream stage into reality. The monogram was outstanding."',
         author: '- Rahul & Priya S.'
     },
