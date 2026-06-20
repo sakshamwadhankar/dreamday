@@ -257,16 +257,12 @@ const Home = () => {
       <section className="stats">
           <div className="stats-container" data-animate data-stagger>
               <div className="stat-item" data-animate>
-                  <div className="stat-num" data-target="200" data-suffix="+">0+</div>
+                  <div className="stat-num" data-target="500" data-suffix="+">0+</div>
                   <div className="stat-label">Events Managed</div>
               </div>
               <div className="stat-item" data-animate>
-                  <div className="stat-num" data-target="8" data-suffix="+">0+</div>
+                  <div className="stat-num" data-target="9" data-suffix="+">0+</div>
                   <div className="stat-label">Years Experience</div>
-              </div>
-              <div className="stat-item" data-animate>
-                  <div className="stat-num" data-target="150" data-suffix="+">0+</div>
-                  <div className="stat-label">Venue Partners</div>
               </div>
               <div className="stat-item" data-animate>
                   <div className="stat-num" data-target="100" data-suffix="%">0%</div>
