@@ -45,7 +45,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
           </Routes>
           <Footer />
-          <Agentation />
+          {window.location.hostname === 'localhost' && <Agentation />}
         </Router>
       </LightboxProvider>
     </DataProvider>

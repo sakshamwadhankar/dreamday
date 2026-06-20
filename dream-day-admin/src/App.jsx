@@ -10,6 +10,7 @@ import Gallery from './pages/Gallery';
 import Manager from './pages/Manager';
 import Videos from './pages/Videos';
 import Inquiries from './pages/Inquiries';
+import { Agentation } from 'agentation';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="inquiries" element={<Inquiries />} />
             </Route>
           </Routes>
+          {window.location.hostname === 'localhost' && <Agentation />}
         </Router>
       </ToastProvider>
     </AuthProvider>
