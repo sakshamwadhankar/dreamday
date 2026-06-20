@@ -3717,11 +3717,32 @@ body.light-mode .marquee-fade-right {
 
 @media (max-width: 768px) {
     .hero-floating-img {
-        opacity: 0.15 !important;
+        opacity: 0.9 !important;
         z-index: 1 !important;
+        width: 110px !important;
+    }
+    .hero-floating-img:nth-of-type(1) {
+        top: 80px !important;
+        right: 15px !important;
+    }
+    .hero-floating-img:nth-of-type(2) {
+        bottom: 160px !important;
+        left: 15px !important;
     }
     .hero-main-title {
         z-index: 4 !important;
+        font-size: 3rem !important;
+    }
+    .hero-bottom-text {
+        bottom: 80px !important;
+        left: 15px !important;
+        right: 15px !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        z-index: 3 !important;
+    }
+    .scroll-indicator {
+        bottom: 25px !important;
     }
 }
 

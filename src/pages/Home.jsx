@@ -195,7 +195,7 @@ const Home = () => {
               {/* Bottom Right Text */}
               <div className="hero-bottom-text" data-animate="slide-right" data-delay="400ms" style={{ position: 'absolute', bottom: '15%', right: '2%', maxWidth: '320px', textAlign: 'left', zIndex: 3 }}>
                   <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(0.85rem, 1vw, 1rem)', color: '#E2E8F0', textShadow: '1px 2px 8px rgba(0,0,0,0.9)', lineHeight: '1.8', fontWeight: '300', margin: 0, letterSpacing: '0.5px' }}>
-                      Turning your special moments into unforgettable celebrations with creativity, precision, and professionalism.
+                      Make Your Dream Day Come True by Turning Your Special Moments into Unforgettable Celebrations
                   </p>
               </div>
           </div>
