@@ -1203,7 +1203,7 @@ section {
 
 .stats-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     text-align: center;
 }
@@ -1883,12 +1883,7 @@ footer {
         display: block;
         z-index: 1002;
     }
-    .stats-container {
-        grid-template-columns: 1fr 1fr;
-    }
-    .stat-item:nth-child(2)::after {
-        display: none;
-    }
+    /* Removed stats-container 2-column override to keep 3 items in a single row */
     .hero-title {
         font-size: 2.3rem;
     }
